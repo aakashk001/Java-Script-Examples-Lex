@@ -3,3 +3,8 @@ Problem Statement:
 Write a JavaScript program to find the area of a circle using:
 1. radius
 2. pi
+
+Excercise - DataTypes
+Problem Statment: 
+Write JavaScript code to display the movie details such as movie name, language, and ratings.
+Initialize the variables with values of appropriate types. Use template literals wherever necessary.
