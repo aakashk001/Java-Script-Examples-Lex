@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Details</title>
+    <style>
+        div#maincontent {
+            height: 150px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 80px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="heading"><h3>Theatre Drama</h3></div>
+        <div id="maincontent">
+            <h4> Your Ticket Details:</h4> 
+            <script>
+                let seats = 3;
+                let discount = 10;
+                let costPerSeats = 9;
+                let totalCostPay = (100-discount)*seats*costPerSeats/100;
+                document.write("Total number of seats booked: "+seats+"</br>");
+                document.write("Total cost of "+seats+" tickets: $"+seats*costPerSeats+"</br>");
+                document.write("Festival season discount is: "+discount+"% </br>");
+                document.write("Festival season discount is: "+totalCostPay+"% </br>");
+            </script>
+        </div>
+    </center>
+</body>
+</html>
