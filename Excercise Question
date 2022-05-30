@@ -8,3 +8,8 @@ Excercise - DataTypes
 Problem Statment: 
 Write JavaScript code to display the movie details such as movie name, language, and ratings.
 Initialize the variables with values of appropriate types. Use template literals wherever necessary.
+
+Excercise - Operators
+Problem Statment:
+Write JavaScript code to do online booking of theatre and calculate the total price ,considering the price per ticker as $9. Also, apply a festival season discount 10% and 
+calculate the discounted amount. 
