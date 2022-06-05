@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=" UTF - 8">
+        <meta name = "viewport" content="width = device-width, initial-scale = 1.0">
+        <title>Icecream</title>
+        <style>
+            #background{
+                background-color: lightblue;
+                text-align: center;
+                
+            }
+         
+        </style>
+    </head>
+    <body id = "background">
+       
+            <h2 id = "heading">Here is your icecream</h2>
+            <img  id = "img1" src = "fullcone.jpg" alt ="Ice cream is ready">
+         <div> <button id = "btn1"  onclick="eat()">Click here to eat</button></div> 
+
+
+         <script>
+             function eat(){
+                 if(document.getElementById("btn1").innerHTML == "Click here to eat"){
+                    console.log(document.getElementById("btn1").innerHTML);
+                    this.eatFirst();
+                  console.log(document.getElementById("btn1").innerHTML)
+                 }  
+                 else if(document.getElementById("btn1").innerHTML == "Click here to refill"){
+                     this.eatSecond();
+                 }
+             }
+
+             function eatFirst(){
+                document.getElementById("btn1").innerHTML = "Click here to refill";
+                document.body.style.backgroundColor = "green";
+                document.getElementById("img1").src ="cone.jpg";
+                document.getElementById("heading").innerHTML = "<h2>Hope You Liked it!!!!!</h2>";
+             }
+             function eatSecond(){
+                 document.getElementById("btn1").innerHTML = "Enjoy Yourself!!!";
+                 document.body.style.backgroundColor = "lightblue";
+                 document.getElementById("img1").src = "fullcone.jpg";
+                 document.getElementById("heading").innerHTML = "<h2>Here's a re-filled cone! </h2>";
+             }
+    
+         </script>
+        
+    </body>
+
+
+
+</html>
