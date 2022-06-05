@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cloning and Combining using Spread Operator</title>
+    </head>
+<body>
+   <script>
+       //Spreaad Operator consist of three dots(...) which helps in spreading out the elements of an arrays to a new variable
+       let numArr = [10,5,20] 
+       //spred the terms into list of arguments
+
+       console.log(Math.max(...numArr));
+
+
+       //Merging the arrays 
+
+       let arr1 = [1,2,3]
+       let arr2 = [4,5,6,7]
+       let newArr = [...arr1,...arr2]
+       console.log(newArr);
+
+       //adding new elemnt
+       let newAr1 = [...arr1,10,...arr2];
+       console.log(newAr1);
+
+
+       //creating copy
+       let newArr2 = [3,5,1];
+       let arrCopy = [...newArr2];
+       arrCopy.push(4);
+       console.log(arrCopy);
+   </script>
+</body>
+</html>

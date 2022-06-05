@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            "Destructing Arrays"
+        </title>
+    </head>
+    <body>
+        <script>
+            //We have an arry with employeeId amd Employee name 
+
+            let empArr = ["Shaan",104567];
+
+            //destructing assignment 
+          //  sets empName = empArr[0]
+          //and empId = empArr[1]
+
+          let [empName , empId] = empArr;
+          console.log(empName);
+          console.log(empId);
+
+          //OR
+          let[empName1, ,location1] =["Shaan",104567,"Banglore"] ;
+          
+          console.log(empName1); // "Shann"
+          console.log(location1);//banglore
+
+          //To solve the abpve 
+
+          let[Name,...rest] = ["Shaan",104567,"Banglore"];
+          console.log(Name);
+          console.log(rest);
+        </script>
+    </body>
+</html>

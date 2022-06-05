@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Destructing Arrays
+        </title>
+    </head>
+    <body>
+    <script>
+        //Push() -- Adds element at the end
+        let myArr = ["Android","IOS","Windows"];
+        myArr.push("Linux");
+        console.log(myArr);
+
+        //pop() - -Removes the last elements of an array
+        console.log(myArr.pop());
+
+       console.log(myArr);
+
+       //shift() -- Remove the first element of an array
+       console.log(myArr.shift());
+
+       //unshift() -- Add element at the first postion of an array
+       myArr.unshift("Linux");
+       console.log(myArr);
+
+       //splice() -- Change the content of an array by inserting , removing and replacing elements. Returin the arry of removed elements
+       //array.splice(index,deleteCount, items);
+       //index = index for new item
+       // delete Count = number of items to be removed 
+       //items = items to be added 
+
+       myArr.splice(1,0,"Linux");
+       console.log(myArr);
+
+       //slice() - Return a part of an array
+      
+       console.log( myArr.slice(1,2));
+
+       //concat() -- Just two or more arrays and returns joined arrays
+
+       myArr1 = ["One","Two"];
+       myArr2 = ["Three","Four"]
+
+       console.log(myArr1.concat(myArr2));
+
+       //indexOf()-- Return the index for the occurance of an elemet in an array
+       console.log(myArr.indexOf("Linux"));
+
+       //find() -- Return the value of the first elements in an arry that passes a condition specified in the callback function
+       let result = myArr.find(element =>element.length >5);
+       console.log(result);
+       let result2 = myArr.findIndex(element =>element.length > 5);
+       console.log(result2);
+
+       //filter() -- Create a new array with elements that passes the test provided as a function
+
+       let result3 = myArr.filter(element =>element.length > 5);
+       console.log(result3);
+       //map()
+       myArr.map()
+       </script>
+    </body>
+</html>
